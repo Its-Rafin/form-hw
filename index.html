@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Design</title>
+    <style>
+        form{
+            border: black solid 2px;
+            padding: 15px;
+            margin: 10px;
+        }
+      
+        label{
+            display: block;
+            margin-bottom: 30px;
+        }
+        input{
+            align-items: center;
+            
+        }
+        .btn{
+            display: flex;
+            margin-left: 150px;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Registration Form</h1>
+        <label for="name-1">First Name:
+            <input type="text" id="name-1" placeholder="First Name">
+        </label>
+        <label for="name-2">Last Name:
+            <input type="text" id="name-2" placeholder="Last Name">
+        </label>
+        <label for="email">Email:
+            <input type="email" id="email" placeholder="Your Email">
+        </label>
+        <label for="password">Password:
+            <input type="password" id="password" placeholder="Your Password">
+        </label>
+
+        <label for="gender">Gender:
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <input type="radio" name="gender" id="gender">Others
+        </label>
+        <label for="age">Age:
+            <input type="number" name="age" id="age" placeholder="Your age">
+
+        </label>
+        <label for="preferences">Preferences:
+            <input type="checkbox" name="" id="preferences">Acrylic Painting
+            <input type="checkbox" name="" id="preferences">Oil Painting
+            <input type="checkbox" name="" id="preferences">Water Colour Painting
+        </label>
+        <label for="">Occupation:
+            <select name="occupation" id="accupation">
+                <option value="" selected disabled>Select Occupation</option>
+                <option value="student">Student</option>
+                <option value="engineer">Engineer</option>
+                <option value="business">Businessman</option>
+                <option value="doctor">Doctor</option>
+                <option value="architect">Architect</option>
+                </select>
+        </label>
+        <label for="bio">Bio:
+            <textarea name="" id="bio" cols="30" rows="5" placeholder="Share few lines about yourself...."></textarea>
+        </label>
+        <div class="btn">
+            <input type="reset"> <input type="submit">
+        </div>
+        </form>
+</body>
+</html>
